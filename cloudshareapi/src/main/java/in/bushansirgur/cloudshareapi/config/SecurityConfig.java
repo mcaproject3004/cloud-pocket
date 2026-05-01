@@ -34,7 +34,11 @@ public class SecurityConfig {
                                 "/webhooks/**",
                                 "/files/public/**",
                                 "/files/download/**",
-                                "/health"
+                                "/api/v1.0/webhooks/**",
+                                "/api/v1.0/files/public/**",
+                                "/api/v1.0/files/download/**",
+                                "/health",
+                                "/api/v1.0/health"
                         ).permitAll()
                         .anyRequest().authenticated()
                 )
